@@ -65,7 +65,8 @@
 
 @media screen and (max-width:480px) {
     .bg {
-        right: 20vw;
-
+        right: 26vw;
+        height: 200px;
+        width: 200px;
     }
 }
