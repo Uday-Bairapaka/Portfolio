@@ -65,6 +65,7 @@
 
 @media screen and (max-width:480px) {
     .bg {
+        top: 1rem;
         right: 26vw;
         height: 200px;
         width: 200px;
