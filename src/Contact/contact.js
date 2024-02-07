@@ -1,12 +1,10 @@
 import React, { useRef, useState } from "react";
 import './contact.css';
-import Walmart from '../assets/walmart.png';
-import Adobe from '../assets/adobe.png';
-import Microsoft from '../assets/microsoft.png';
-import Facebook from '../assets/facebook-icon.png';
-import Instagram from '../assets/instagram.png';
-import Youtube from '../assets/youtube.png';
+import LaneLineVideo from '../assets/harder_challenge_video_output.mp4';
+import github from "../assets/Github_logo_PNG4.png";
+import linkdin from "../assets/linkedin.png";
 import emailjs from '@emailjs/browser';
+import { Link } from "react-scroll";
 
 const Contact = () => {
     const form = useRef();
@@ -37,10 +35,12 @@ const Contact = () => {
                 <p className="ProjectDesc"></p>
             </div>
             <div className="ProjectImgs">
-                <img src={Walmart} alt="Projects" className="ProjectImg" />
-                <img src={Adobe} alt="Projects" className="ProjectImg" />
-                <img src={Microsoft} alt="Projects" className="ProjectImg" />
-                <img src={Microsoft} alt="Projects" className="ProjectImg" />
+                <button className="workbtn"><a href="https://colab.research.google.com/github/UdayBairapaka/Hotel_Prediction/blob/main/Hotel_prediction_uday_bairapaka.ipynb#scrollTo=YSUiQINxA4mq">Hotel_Booking_Cancellation_Prediction</a></button>
+                <button className="workbtn"><a href="https://colab.research.google.com/drive/1f4PpGuT1fZffMU7AYV5woO4NEyT-ullN#scrollTo=J0A9oCK9YFhx&uniqifier=2">Lane_Line_Detection</a></button>
+                <video className="ProjectImg" controls>
+                    <source src={LaneLineVideo} type="video/mp4" />
+                </video>
+                <button className="workbtn">Jobify</button>
             </div>
             <div id="contact">
                 <h1 className="contactpagetitle">Contact Me</h1>
@@ -53,9 +53,8 @@ const Contact = () => {
                         {isSending ? 'Sending...' : 'Submit'}
                     </button>
                     <div className="links">
-                        <img src={Facebook} alt=""  className="link"/>
-                        <img src={Instagram} alt=""  className="link"/>
-                        <img src={Youtube} alt=""  className="link"/>
+                        <img src={github} alt=""  className="link"/>
+                        <img src={linkdin} alt=""  className="link"/>
                     </div>
                 </form>
             </div>
