@@ -53,8 +53,8 @@ const Contact = () => {
                         {isSending ? 'Sending...' : 'Submit'}
                     </button>
                     <div className="links">
-                        <img src={github} alt=""  className="link"/>
-                        <img src={linkdin} alt=""  className="link"/>
+                        <a href="https://github.com/Uday-Bairapaka"><img src={github} alt=""  className="link"/></a>
+                        <a href="https://www.linkedin.com/in/uday0007/"><img src={linkdin} alt=""  className="link"/></a>
                     </div>
                 </form>
             </div>
